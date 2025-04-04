@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VT - LOGIN</title>
+<link rel="icon" type="image/png" href="ICON.png">
+<link rel="stylesheet" href="LOGIN-sty.css">
+</head>
+<body>
+<div class="login-container">
+<h2>VIRTUAL TRAINING - SUB ENSAMBLE</h2>
+<div id="folio" class="folio"></div>
+<form id="login-form">
+<div class="form-row">
+<div class="form-group">
+<label for="user-id">No. de Reloj</label>
+<input type="text" id="user-id" placeholder="6 digitos" pattern="\d{6}" inputmode="numeric" required>
+</div>
+<div class="form-group">
+<label for="date">Fecha</label>
+<input type="text" id="date" readonly>
+</div>
+<div class="form-group">
+<label for="time">Hora</label>
+<input type="text" id="time" readonly>
+</div>
+</div>
+<div class="form-row full-width">
+<div class="form-group">
+<label for="user-name">Nombre</label>
+<input type="text" id="user-name" placeholder="Primer nombre y apellido" required>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="linea">Linea</label>
+<select id="linea" required>
+<option value="" disabled selected>Select Linea</option>
+</select>
+</div>
+<div class="form-group">
+<label for="part-number">Numero de Parte</label>
+<select id="part-number" required disabled>
+<option value="" disabled selected>Select Part Number</option>
+</select>
+</div>
+<div class="form-group">
+<label for="estacion">Estacion</label>
+<select id="estacion" required disabled>
+<option value="" disabled selected>Select Estacion</option>
+<option value="SUB">SUB</option>
+</select>
+</div>
+</div>
+<button type="submit">Iniciar Evaluacion</button>
+</form>
+</div>
+<script src="REGISTRO.js"></script>
+<script src="LOGIN-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.login-container {
+  position: relative;
+  background-color: #1E1E1E;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.folio {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  color: #BDBDBD;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.form-row.full-width {
+  flex-direction: column;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group label[for="date"] {
+  margin-left: 44px;
+}
+
+.form-group label[for="time"] {
+  margin-left: 22px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #616161;
+  background-color: #2E2E2E;
+  color: #E0E0E0;
+}
+
+.form-group input#date {
+  width: 120px;
+  margin-left: 44px;
+}
+
+.form-group input#time {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.form-group input#user-name {
+  max-width: 482px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976D2;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 43px;
+}
+
+button[type="submit"]:hover {
+  background-color: #1565C0;
+}

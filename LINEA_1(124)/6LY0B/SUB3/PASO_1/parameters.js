@@ -1,0 +1,129 @@
+
+// DevMenu
+let cavidadWidth = "39px";
+let cavidadHeight = "46px";
+let angularShape = true;
+
+let orientationHeight = "40px";
+
+// Posiciones
+let cavityPositions = {
+  "cavity(1)": {
+    "top": 150.138,
+    "left": 3.08749
+  },
+  "cavity(2)": {
+    "top": 150.941,
+    "left": 49.2906
+  },
+  "cavity(3)": {
+    "top": 151.019,
+    "left": 93.7125
+  },
+  "cavity(4)": {
+    "top": 150.813,
+    "left": 138.25
+  },
+  "cavity(5)": {
+    "top": 149.863,
+    "left": 182.581
+  },
+  "cavity(6)": {
+    "top": 151.105,
+    "left": 228.502
+  },
+  "cavity(7)": {
+    "top": 150.803,
+    "left": 272.84
+  },
+  "cavity(8)": {
+    "top": 150.175,
+    "left": 317.275
+  },
+  "cavity(9)": {
+    "top": 150.175,
+    "left": 362.575
+  },
+  "cavity(10)": {
+    "top": 149.8,
+    "left": 408.244
+  },
+  "cavity(11)": {
+    "top": 150.163,
+    "left": 452.553
+  },
+  "cavity(12)": {
+    "top": 68.625,
+    "left": 48.6687
+  },
+  "cavity(13)": {
+    "top": 68.7371,
+    "left": 93.4642
+  },
+  "cavity(14)": {
+    "top": 69.0775,
+    "left": 139.777
+  },
+  "cavity(15)": {
+    "top": 69.5375,
+    "left": 182.588
+  },
+  "cavity(16)": {
+    "top": 69.0918,
+    "left": 227.491
+  },
+  "cavity(17)": {
+    "top": 69.0416,
+    "left": 273.741
+  },
+  "cavity(18)": {
+    "top": 67.8556,
+    "left": 317.576
+  },
+  "cavity(19)": {
+    "top": 69.65,
+    "left": 362.4
+  },
+  "cavity(20)": {
+    "top": 70.18,
+    "left": 408.278
+  }
+};
+
+let orientationPositions = {
+  "orientation(1)": {
+    "top": 204.063,
+    "left": 86.9625
+  },
+  "orientation(2)": {
+    "top": 22.4306,
+    "left": 88.559
+  }
+};
+
+// Asignaciones
+let orientationConfigs = {
+  "orientation(1)": "down",
+  "orientation(2)": "up"
+};
+
+let lockExpected = "locked";
+
+let connections = [
+  {
+    "cavityId": "13",
+    "cableId": "SB"
+  },
+  {
+    "cavityId": "14",
+    "cableId": "Y"
+  },
+  {
+    "cavityId": "15",
+    "cableId": "V"
+  },
+  {
+    "cavityId": "18",
+    "cableId": "W"
+  }
+];

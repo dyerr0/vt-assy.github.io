@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VT - SUB ASSY</title>
+<link rel="icon" type="image/png" href="../../../../ICON.png">
+<link rel="stylesheet" href="PASO-sty.css">
+</head>
+<body>
+<div id="confirmation-modal" class="modal">
+<div class="modal-content">
+<h2>Iniciar Evaluacion</h2>
+<p>Estas seguro de que deseas iniciar la evaluacion?</p>
+<button id="confirm-start">Iniciar</button>
+<button id="cancel-start">Cancelar</button>
+</div>
+</div>
+<div id="timeout-modal" class="modal">
+<div class="modal-content">
+<h2>Tiempo Agotado</h2>
+<p>El tiempo de la evaluacion ha terminado.</p>
+<button id="exit-evaluation">Salir</button>
+</div>
+</div>
+<h1 id="page-heading"></h1>
+<div class="step-timer" style="place-content: center;">
+<span id="step" style="margin-right: 40px; font-weight: bolder; font-size: 30px;"></span>
+<div id="timer" class="timer">3:00</div>
+</div>
+<div class="board">
+<svg id="cable-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></svg>
+<div class="connector">
+<img src="CR.png" alt="Conector" class="connector-image">
+</div>
+<div class="cables-grid">
+<div class="cable-item">
+<svg class="cable" data-id="B" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="black" />
+</svg>
+<span class="cable-id">B</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="W" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="white" />
+</svg>
+<span class="cable-id">W</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="R" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="red" />
+</svg>
+<span class="cable-id">R</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="GR" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="gray" />
+</svg>
+<span class="cable-id">GR</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="Y" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="yellow" />
+</svg>
+<span class="cable-id">Y</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="V" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="violet" />
+</svg>
+<span class="cable-id">V</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="BG" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="beige" />
+</svg>
+<span class="cable-id">BG</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="LA" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="lavender" />
+</svg>
+<span class="cable-id">LA</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="BR" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="brown" />
+</svg>
+<span class="cable-id">BR</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="P" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="pink" />
+</svg>
+<span class="cable-id">P</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="SB" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="skyblue" />
+</svg>
+<span class="cable-id">SB</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="O" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="orange" />
+</svg>
+<span class="cable-id">O</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="L" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="blue" />
+</svg>
+<span class="cable-id">L</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="G" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="green" />
+</svg>
+<span class="cable-id">G</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="LG" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="lightgreen" />
+</svg>
+<span class="cable-id">LG</span>
+</div>
+<div class="cable-item">
+<svg class="cable" data-id="DMY" onclick="selectCable(event)">
+<circle cx="50%" cy="50%" r="20" fill="transparent" stroke="black" stroke-dasharray="4" />
+</svg>
+<span class="cable-id">DMY</span>
+</div>
+</div>
+<div class="button-container">
+<button class="evaluate-button" onclick="evaluateConnections()">Evaluar Conexiones</button>
+<button id="next-step-button" class="next-button" style="display: none;" onclick="goToNextStep()">Siguiente Paso</button>
+</div>
+<p id="result"></p>
+<script src="parameters.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
