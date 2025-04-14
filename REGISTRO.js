@@ -60,6 +60,17 @@ var partsData = {
             version: "040004",
             stations: ["SUB1", "SUB2", "SUB3", "SUB4", "SUB5"]
 
+    },
+  },
+ "LINEA 2(126)": {
+    "6LB0A": { 
+      version: "040002", 
+      stations: ["SUB1"] 
+        },
+    "6LB0B": { 
+            version: "040002",
+            stations: ["SUB1"]
+
     }
   }
 };
